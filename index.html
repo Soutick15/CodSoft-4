@@ -63,7 +63,7 @@
           </li>
 
           <li>
-            <a href="https://drive.google.com/file/d/1r1r5LSBaKVnxcYsUqRi-2_sUN9XClu2f/view?usp=sharing" class="btn btn-primary">Download CV</a>
+            <a href="https://drive.google.com/file/d/1F0TsPdgDyGkW3SsMfAC2IT5MjleZUYVq/view?usp=sharing" target="_blank" class="btn btn-primary">Download CV</a>
           </li>
 
         </ul>
@@ -96,7 +96,7 @@
             <div class="elem elem-2">
               <p class="elem-title">10+</p>
 
-              <p class="elem-text">Completed Projects✌</p>
+              <p class="elem-text">frontend Projects✌</p>
             </div>
 
             <div class="elem elem-3">
@@ -118,13 +118,11 @@
             </p>
 
             <div class="btn-group">
-              <a href="#contact" class="btn btn-primary blue">Get a Quote</a>
+              <a href="#contact" class="btn btn-primary blue">Get in Touch</a>
 
               <a href="#about" class="btn">About Me</a>
             </div>
-
           </div>
-
         </div>
       </section>
 
@@ -214,9 +212,9 @@
               <a href="https://soutick15.github.io/Basic-Calculator/" class="portfolio-card" style="background-image: url('./images/calculator.avif')">
                 <div class="card-content">
 
-                  <p class="card-subtitle">Calculator</p>
+                  <p class="card-subtitle">Calculator using JS</p>
 
-                  <h3 class="h3 card-title">Calculator App</h3>
+                  <h3 class="h3 card-title">Calculator</h3>
 
                   <span class="btn-link">
                     <span>View Project</span>
@@ -228,10 +226,11 @@
               </a>
             </li>
             <li>
-              <a href="https://soutick15.github.io/Spotify-clone/" class="portfolio-card" style="background-image: url('./images/simon_game.jpeg')">
+              <a href="https://soutick15.github.io/Simon-Game/" class="portfolio-card" style="background-image: url('./images/simon_game.jpeg')">
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Spotify Clone</h3>
+                  <p class="card-subtitle">Online Simon memory game</p>
+                  <h3 class="h3 card-title">Simon Game</h3>
 
                   <span class="btn-link">
                     <span>View Project</span>
@@ -246,7 +245,7 @@
             
 
             <li>
-              <a href="#" class="portfolio-card" style="background-image: url('./images/gym project.jpg')">
+              <a href="https://soutick15.github.io/Gym-Landing-Page/" class="portfolio-card" style="background-image: url('./images/gym project.jpg')">
                 <div class="card-content">
 
                   <p class="card-subtitle">Landing Page</p>
@@ -282,10 +281,22 @@
             <li>
               <a href="https://soutick15.github.io/To-Do-List/" class="portfolio-card" style="background-image: url('./images/to-do.jpeg')">
                 <div class="card-content">
-
-                  <p class="card-subtitle">To-Do list online app.</p>
-
+                  <p class="card-subtitle">Online To-Do list</p>
                   <h3 class="h3 card-title">To-Do List </h3>
+                  <span class="btn-link">
+                    <span>View Project</span>
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('./images/portfolio-4.jpg')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Bootstrap</p>
+
+                  <h3 class="h3 card-title">Tindog </h3>
 
                   <span class="btn-link">
                     <span>View Project</span>
@@ -298,7 +309,7 @@
             </li>
 
             <li>
-              <a href="https://soutick15.github.io/CODSOFT/" class="portfolio-card" style="background-image: url('./images/portfolio-3.jpg')">
+              <a href="https://soutick15.github.io/Tribute-Page/#" class="portfolio-card" style="background-image: url('./images/portfolio-3.jpg')">
                 <div class="card-content">
 
 
@@ -527,6 +538,20 @@
   <!-- 
     - ionicon link
   -->
+  <script src="https://unpkg.com/ionicons@5.5
+  .2/dist/ionicons.js"></script>
+  <script>
+    document.querySelectorAll('a[data-nav-link]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
